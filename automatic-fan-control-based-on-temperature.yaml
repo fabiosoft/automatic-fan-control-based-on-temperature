@@ -2,11 +2,11 @@ blueprint:
   name: Automatic Fan Control based on Temperature
   description: "## Fan ON/OFF Automation based on temperature, outside\
     \ temperature.\n\nFan turns on if the following conditions are met:\n  temperature\
-    \ inside greater than your set threshold value\n  & room/area is occupied\n  &\
+    \ inside greater than your set threshold value\n 
     \ temperature outside is lower than your set maximum value (to prevent turning\
     \ the fan on in winter)\n\nFan turns off if the following conditions are met:\n\
     \  temperature inside is lower than your threshold value minus the hystersis value\n\
-    \  room/area is not occupied\n\nWhat the automation **NOT** observes:\n  manual\
+    \  What the automation **NOT** observes:\n  manual\
     \ fan control. Adapt the given values too your needs.\n  If you manually turn\
     \ the fan on and the inside temperature is below the threshold your fan will turn\
     \ off soon.\n\nWhat you need:\n  a fan entity. if you control your fan via a switch\
@@ -117,3 +117,4 @@ action:
       target: !input 'fan'
   default: []
 mode: single
+
